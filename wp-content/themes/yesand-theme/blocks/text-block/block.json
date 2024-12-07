@@ -1,0 +1,14 @@
+{
+    "name": "text block",
+    "title": "TEXT block",
+    "description": "the Text  block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "text-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

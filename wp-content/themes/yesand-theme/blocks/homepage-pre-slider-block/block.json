@@ -1,0 +1,14 @@
+{
+    "name": "Yes& Homepage Pre-slider block",
+    "title": "Yes& Homepage Pre-slider block",
+    "description": "Configurable Yes& Homepage Pre-slider block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "homepage-pre-slider-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

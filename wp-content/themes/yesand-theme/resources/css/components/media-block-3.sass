@@ -1,0 +1,39 @@
+.media-block-3
+	position: relative
+
+	@media (min-width: 768px)
+		align-items: center
+		display: flex
+		flex-wrap: nowrap
+
+	@media (min-width: 1280px)
+		gap: 7rem
+
+	@media (min-width: 576px) and (max-width: 1280px - 1)
+		gap: 4rem
+
+	&__frame
+		@media (min-width: 1024px)
+			flex-basis: 40%
+
+		@media (max-width: 1024px - 1)
+			flex-basis: 50%
+
+		@media (max-width: 768px - 1)
+			margin-block-end: 2rem
+			max-height: 400px
+
+	&__content
+		@media (min-width: 1024px)
+			flex-basis: 60%
+
+		@media (max-width: 1024px - 1)
+			flex-basis: 50%
+
+	&__prepend-img-1
+		position: absolute
+
+		@media (min-width: 1280px)
+			left: 4rem
+			top: -8.5rem
+			width: 200px

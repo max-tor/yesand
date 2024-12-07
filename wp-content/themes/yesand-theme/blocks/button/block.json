@@ -1,0 +1,14 @@
+{
+    "name": "Yes& button",
+    "title": "Yes& button",
+    "description": "Configurable Yes& button",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "button.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

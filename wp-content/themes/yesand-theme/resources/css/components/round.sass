@@ -1,0 +1,52 @@
+.round-1
+	box-shadow: 0 1px 2px 1px hsla(0, 0%, 20%, .2)
+	clip-path: circle(475px)
+	background-color: crimson
+	shape-outside: circle(50%)
+
+.shade-1
+	position: relative
+
+	&:after
+		background-image: linear-gradient(hsla(0, 0%, 0%, .3), hsla(0, 0%, 0%, .5))
+		bottom: 0
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 1
+
+
+.circle-media-1
+	&__frame
+		aspect-ratio: 1 / 1
+		border-radius: 50%
+		overflow: hidden
+
+	&__img
+		object-fit: cover
+		width: 100%
+		height: 100%
+
+
+.circle-media-2
+	&__frame
+		align-items: center
+		aspect-ratio: 1 / 1
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		overflow: hidden
+		text-align: center
+
+	&__img
+		object-fit: cover
+		width: 100%
+		height: 100%
+		position: absolute
+
+	&__txt
+		color: white
+		// top: 50%
+		z-index: 2

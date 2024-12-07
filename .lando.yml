@@ -1,0 +1,10 @@
+name: yesand
+recipe: pantheon
+config:
+  webroot: .
+  framework: wordpress
+  site: yesand
+  id: 8f7be696-dc40-4bd7-9053-bd0211eaee2b
+services:
+  myservice:
+    type: phpmyadmin

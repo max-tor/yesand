@@ -1,0 +1,14 @@
+{
+    "name": "image text block",
+    "title": "Media & Text",
+    "description": "the Image Text  block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "image-text.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

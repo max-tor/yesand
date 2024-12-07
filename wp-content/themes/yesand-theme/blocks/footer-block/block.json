@@ -1,0 +1,14 @@
+{
+    "name": "Yes& Footer Block",
+    "title": "Yes& Pre-Footer Block",
+    "description": "Configurable Yes& Pre-Footer Block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "footer-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

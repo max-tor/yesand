@@ -1,0 +1,363 @@
+.header-default
+	clip-path: ellipse(180% 56% at 48% 44%)
+	padding-top: 50px
+	padding-bottom: 100px
+
+	@media (min-width: 768px)
+		clip-path: ellipse(140% 56% at 48% 44%)
+		padding-bottom: 140px
+
+	@media (min-width: 1024px)
+		clip-path: ellipse(120% 56% at 48% 44%)
+
+	@keyframes fadeIn 
+		0% 
+			opacity: 0.4
+		100%
+			opacity: 1
+
+	&__tabs-item
+		display: flex
+		flex-direction: column
+		width: 100%
+
+		@media (min-width: 1024px)
+			flex-direction: row
+
+		// &:after
+		// 	content: ''
+		// 	transition: 1.4s
+		// 	display: none
+
+		// 	@media (min-width: 1024px)
+		// 		display: block
+
+		// &.fish
+		// 	&:after				
+		// 		background-image: url('../../../images/illustrations/fish-1.png')
+		// 		background-size: contain
+		// 		background-repeat: no-repeat
+		// 		position: absolute				
+		// 		max-width: 580px
+		// 		width: 100%
+		// 		right: 50px
+		// 		height: 350px				
+		// 		background-position: right
+		// 		top: 60px
+		// 		transform-origin: bottom
+
+		&.small
+			position: relative
+
+			// &::after				
+			// 	transform: rotate(-14deg)
+			// 	right: 0
+			// 	max-width: 260px
+
+			// 	@media (min-width: 1024px)
+			// 		max-width: 330px
+
+	&__title
+		max-width: 570px
+		margin-top: 40px
+		position: relative
+		z-index: 1
+
+
+	&__tabs
+		display: flex
+		padding-top: 30px
+		position: relative
+		flex-direction: column
+		$translate-y: 100px
+
+		@media (min-width: 1024px)
+			padding-top: 40px
+			min-height: 370px
+
+		@media (min-width: 1280px)
+			padding-left: 88px
+			max-width: 100%
+			min-height: 490px
+
+		&:before
+			content: ''
+			background-image: url('../../../images/circles-5.svg')
+			width: 100%
+			height: 530px
+			position: absolute
+			background-repeat: no-repeat
+			z-index: 0
+			opacity: 0.5
+			background-position-y: 100%
+			background-position-x: left
+			transform: rotate(180deg)
+			right: 0
+			transition: 0.8s
+			display: none
+
+			@media (min-width: 1024px)
+				display: block
+				top: -50px
+
+			@media (min-width: 1280px)
+				top: 0
+
+		&-modal-container
+			margin: 20px 0 60px
+			max-width: 480px
+
+			@media (min-width: 1024px)
+				margin: 0
+				max-width: initial
+
+		&-close 
+			position: absolute
+			background: white
+			padding: 10px
+			border-radius: 50%
+			right: 50px
+			top: 35px
+
+			@media (min-width: 1024px)
+				right: 64px
+
+		&-buttons
+			display: none
+			flex-direction: column
+			width: 100%
+			position: relative
+
+			@media (min-width: 1024px)
+				max-width: 400px
+				display: flex
+
+			@media (min-width: 1280px)
+				padding-left: 88px
+				max-width: 100%
+
+		&-button
+			text-align: left
+			font-size: 21px
+			font-weight: 600
+			line-height: 1.5
+			position: relative
+			width: 100%
+			display: flex
+			align-items: center
+			transition: 0.8s
+			text-transform: uppercase
+
+			@media (min-width: 1024px)
+				max-width: 400px
+
+			@media (min-width: 1280px)
+				max-width: 570px
+
+			span
+				max-width: 90%
+
+			&--mobile
+				@media (min-width: 1024px)
+					display: none
+
+			@media (min-width: 1280px)
+				font-size: 35px
+
+			&:after
+				content: ""
+				height: 3px
+				margin-left: 15px
+				display: block
+				flex: 1
+				background: #4CECC9
+				border-radius: 10px
+				opacity: 0
+				transition: 0.8s
+			
+			&:before
+				content: ''
+				background-image: url('../../../images/arrow-right.svg')
+				position: absolute
+				right: 0
+				width: 9px
+				height: 15px
+				background-repeat: no-repeat
+				background-size: contain
+				opacity: 0
+				transition: 0.8s
+
+			&:hover
+				color: #4CECC9
+
+			&.selected
+				color: #4CECC9
+
+				&:after
+					opacity: 1
+				
+				&:before
+					opacity: 1
+
+		&-content			
+			width: 100%
+			display: none
+
+			@media (min-width: 1024px)
+				padding-right: 40px
+				max-width: 560px
+				display: block
+
+		&-link
+			padding: 10px 24px
+			border-radius: 50px
+			display: inline-block
+			margin-top: 20px
+			text-transform: uppercase
+			font-size: 18px
+			font-family: var(--font-gilroy)
+			transition: 0.5s
+
+			&:hover
+				text-decoration: none !important
+				color: var(--color-yellow) !important
+				
+				svg
+					path
+						fill: var(--color-yellow)
+
+			@media (min-width: 1280px)
+				margin-top: 30px
+
+			svg
+				width: 20px
+				margin-left: 10px
+				display: inline-block
+
+				path
+					transition: 0.5s
+
+	&__image
+		display: none
+
+		@media (min-width: 1024px)
+			display: block
+
+		img
+			max-width: 580px
+			transition: 1.4s
+			position: absolute
+			right: 0
+			top: 0
+
+			@media (min-width: 1280px)
+				top: 50px
+				right: 50px
+
+	&__modal-image
+		position: absolute
+		aspect-ratio: 1 / 1
+		object-fit: cover
+		border-radius: 50%
+		z-index: 0		
+		transition: 0.8s
+		background-image: url('../../../images/photos/CaseStudy.jpg')
+		background-size: cover
+		width: 100%
+		max-width: 480px
+
+		@media (min-width: 1024px)
+			width: 480px
+			right: 0
+
+		@media (min-width: 1280px)
+			width: 522px
+
+	&__tabs-modal-container
+		display: none
+		animation: fadeIn 1s		
+		right: 0
+		width: 100%
+		top: 0
+
+		@media (min-width: 1024px)
+			position: absolute
+			top: -60px
+
+		@media (min-width: 1280px)
+			right: 50px
+			top: 0
+
+		&.show
+			display: flex
+
+	&__tabs-modal
+		display: flex	
+		flex-direction: column
+		position: relative
+		background-color: rgba(76, 236, 201, 0.9)
+		border-radius: 50%
+		aspect-ratio: 1 / 1
+		align-items: center
+		justify-content: center
+		top: 10px
+		font-family: var(--font-capitolium)
+		font-size: 16px
+		font-weight: 500
+		padding: 40px
+		max-width: 440px
+		width: calc(100% - 40px)
+		right: -40px
+
+		@media (min-width: 1024px)
+			position: absolute
+			right: 0
+
+		@media (min-width: 1280px)
+			font-size: 21px
+
+		@media (max-width: 1023px)
+			&:after
+				content: ''
+				background-image: url('../../../images/illustrations/fish-1.png')
+				width: 150px
+				height: 100px
+				background-size: contain
+				right: 0
+				position: absolute
+				bottom: -10px
+				transform: rotate(-10deg)
+
+		p
+			margin-bottom: 3px
+			line-height: 1.4
+
+	.active &
+		&__modal-image
+			display: block
+
+		&__tabs
+			&-content
+				@media (min-width: 1024px)
+					top: -100px
+
+			&:before
+				transform: rotate(151deg)
+				left: -40px
+
+		&__image
+			img
+				position: absolute
+				right: 0
+				z-index: 1
+				max-width: 200px
+				transform: rotate(-14deg)
+
+				@media (min-width: 1024px)
+					max-width: 200px
+					right: 0
+					top: 270px
+					
+				@media (min-width: 1280px)
+					max-width: 330px
+					top: 350px

@@ -1,0 +1,14 @@
+{
+    "name": "Header with media",
+    "title": "Header with media",
+    "description": "Configurable Yes& Header with media",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "header-with-media.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

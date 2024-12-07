@@ -1,0 +1,139 @@
+// `../../images` points to images in `yesand-theme/resources/images`
+// (images from there are copied into `yesand-theme/images` by the build step)
+
+.bg-ripple-1
+	background-image: url('../../images/ripple-1.svg')
+	background-size: auto 375px
+	background-position-x: 0
+	background-position-y: 0
+	background-repeat: no-repeat
+
+.bg-mountains-1
+	background-image: url('../../images/mountains-1400.png')
+	background-position-x: right
+	background-position-y: bottom
+	background-repeat: no-repeat
+
+	@media (min-width: 1280px)
+		background-size: auto 60%
+
+	@media (min-width: 768px) and (max-width: 1280px - 1)
+		background-size: 80% auto
+
+	@media (min-width: 768px)
+		padding-block-end: 7rem
+
+	@media (max-width: 768px - 1)
+		background-size: 100% auto
+		padding-block-end: 14rem
+
+.bg-logo-1
+	background-image: url('../../images/logo/logo-red-pictogram.svg')
+	background-position-x: 95%
+	background-position-y: center
+	background-repeat: no-repeat
+
+	@media (min-width: 1280px)
+		background-size: auto 25vw
+
+	@media (min-width: 768px) and (max-width: 1280px - 1)
+		background-size: auto 70%
+
+	@media (max-width: 768px - 1)
+		background-size: 40% auto
+
+.bg-logo-2
+	background-image: url('../../images/logo/logo-transparent-pictogram.svg')
+	background-position-x: 95%
+	background-position-y: center
+	background-repeat: no-repeat
+
+	@media (min-width: 1280px)
+		background-size: auto 120%
+
+	@media (min-width: 768px) and (max-width: 1280px - 1)
+		background-size: auto 70%
+
+	@media (max-width: 768px - 1)
+		background-size: 40% auto
+
+.bg-wave-1
+	background-image: url('../../images/wave-1.svg')
+	background-position-y: calc(100% + 3px)
+	background-repeat: no-repeat
+	background-size: 100% auto
+
+.bg-wave-2
+	background-image: url('../../images/wave-2.svg')
+	background-position-y: calc(100% + 3px)
+	background-position-x: center
+	background-repeat: no-repeat
+	background-size: 3750px
+	border-bottom-color: white
+	border-bottom-style: solid
+	border-bottom-width: 100px
+
+.bg-wave-3
+	background-image: url('../../images/wave-3.svg')
+	background-position-y: calc(100% + 3px)
+	background-position-x: center
+	background-repeat: no-repeat
+	background-size: 3850px
+
+.bg-wave-4
+	background-image: url('../../images/wave-4.svg')
+	background-position-y: calc(100% + 3px)
+	background-position-x: center
+	background-repeat: no-repeat
+	background-size: auto 80%
+
+.bg-wave-5
+	background-image: url('../../images/wave-5.svg')
+	background-position-y: calc(100% + 3px)
+	background-position-x: center
+	background-repeat: no-repeat
+	background-size: 100% auto
+
+.bg-boots-1
+	background-image: url('../../images/illustrations/boots-1-1280.jpg')
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+
+.bg-boots-2
+	$color: hsl(200, 50%, 5%, .7)
+	background-image: linear-gradient($color, $color), url('../../images/illustrations/boots-1-1280.jpg')
+	background-position: center, center
+	background-repeat: no-repeat, no-repeat
+	background-size: cover, cover
+
+
+.bg-circles-1
+	background-image: url('../../images/illustrations/circles-green-1.png')
+	background-position-x: 65%
+	background-position-y: bottom
+	background-repeat: no-repeat
+
+	@media (min-width: 768px) and (max-width: 1280px - 1)
+		background-size: contain
+
+.bg-circles-2
+	background-image: url('../../images/ripple-2.svg')
+	background-position-x: left
+	background-position-y: center
+	background-repeat: no-repeat
+	background-size: auto 500px
+
+.bg-circles-3
+	background-image: url('../../images/ripple-3.svg')
+	background-position-x: 60%
+	background-position-y: center
+	background-repeat: no-repeat
+	background-size: auto 500px
+
+.bg-circles-4
+	background-image: url('../../images/ripple-4.svg')
+	background-position-x: 20%
+	background-position-y: 150%
+	background-repeat: no-repeat
+	background-size: auto 500px

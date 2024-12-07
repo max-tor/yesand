@@ -1,0 +1,14 @@
+{
+    "name": "team block",
+    "title": "Team Block",
+    "description": "The Team Block with featured Profiles. ",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "team-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

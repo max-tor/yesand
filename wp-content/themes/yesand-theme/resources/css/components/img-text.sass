@@ -1,0 +1,137 @@
+$img-text-sm-min: 640px
+$img-text-md-min: 1024px
+
+$img-text-offset-sm: 30px
+$img-text-offset-md: 60px
+
+.img-text
+	position: relative
+
+	@media (min-width: $img-text-md-min)
+		padding-block: $img-text-offset-md
+
+	@media (min-width: $img-text-sm-min) and (max-width: $img-text-md-min - 1)
+		padding-block: $img-text-offset-sm
+
+	@media (max-width: $img-text-sm-min - 1)
+		padding-block: 2rem
+
+	&__inner
+		@media (min-width: $img-text-sm-min)
+			display: flex
+
+	&__frame
+		background-color: white
+
+		@media (min-width: $img-text-sm-min)
+			flex-basis: 50%
+			flex-grow: 0
+			flex-shrink: 0
+			width: 50%
+
+	&__img
+		width: 100%
+
+	&__video
+		max-width: 100%
+		width: 100%
+
+	&__text
+		flex: 0 0 50%
+
+		@media (min-width: $img-text-sm-min)
+			padding-left: 60px
+
+		@media (min-width: $img-text-md-min)
+			padding-left: 114px
+
+		@media (max-width: $img-text-sm-min - 1)
+			margin-top: 1.5rem
+		
+		.heading-5
+			margin-bottom: 0
+		a:not(.link-with-arrow)
+			&:hover
+				color: var(--color-red)
+
+	&__tags
+		margin-bottom: 20px
+
+	&--with-circles .container
+		position: relative
+		--bg-height-md: 300px
+
+		&::after
+			@media (min-width: $img-text-sm-min)
+				content: ''
+				display: block
+				position: absolute
+				z-index: -1
+
+				background-position-x: left
+				bottom: 0
+				left: 50%
+				min-height: var(--bg-height-md)
+				top: 0
+				width: 50%
+
+				background-image: url('../../../images/ripple-1.svg')
+				background-origin: padding-box
+				background-repeat: no-repeat
+
+			@media (min-width: $img-text-md-min)
+				background-size: auto var(--bg-height-md)
+
+			@media (min-width: $img-text-sm-min) and (max-width: $img-text-md-min - 1)
+				$container-side-padding: 2rem
+				background-size: calc(100% - $container-side-padding) auto
+
+	&--top .container::after
+		background-position-y: top
+
+	&--center .container::after
+		background-position-y: center
+
+	&--bottom .container::after
+		background-position-y: bottom
+
+	
+	&--left &
+
+		&__inner
+			@media (min-width: $img-text-sm-min)
+				flex-direction: row-reverse
+
+		&__text
+			@media (min-width: $img-text-sm-min)
+				padding-right: 60px
+				padding-left: 0
+
+			@media (min-width: $img-text-md-min)
+				padding-right: 114px
+
+
+	&--top &
+		&__inner
+			align-items: flex-start
+
+	&--center &
+		&__inner
+			align-items: center
+
+	&--bottom &
+		&__inner
+			align-items: flex-end
+
+.media-feed
+	&__button
+		margin: 20px auto 0
+
+		@media (min-width: $img-text-sm-min)
+			margin-top: 40px
+	
+	&:not(.is-preview)
+		.img-text
+
+			&:not(:nth-child(-n+3))
+				display: none

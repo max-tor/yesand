@@ -1,0 +1,14 @@
+{
+    "name": "header default",
+    "title": "Header Default with Services tabs",
+    "description": "Yes& Default Header with optional Services Tabs",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "header-default.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

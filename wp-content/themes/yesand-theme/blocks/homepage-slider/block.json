@@ -1,0 +1,14 @@
+{
+    "name": "Yes& Homepage Slider",
+    "title": "Yes& Homepage Slider",
+    "description": "Configurable Yes& Homepage Slider",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "homepage-slider.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

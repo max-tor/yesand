@@ -1,0 +1,91 @@
+<?php
+	if( function_exists('acf_add_local_field_group') ):
+		acf_add_local_field_group(array(
+			'key' => 'group_640a2144335a9',
+			'title' => 'Yes& Button',
+			'fields' => array(
+				array(
+					'key' => 'field_640a2146f1ccc',
+					'label' => 'Button Alignment',
+					'name' => 'yesand_button_alignment',
+					'aria-label' => '',
+					'type' => 'radio',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'choices' => array(
+						'left' => 'Left',
+						'center' => 'Center',
+						'right' => 'Right',
+					),
+					'default_value' => 'center',
+					'return_format' => 'value',
+					'multiple' => 0,
+					'allow_null' => 0,
+					'ui' => 0,
+					'ajax' => 0,
+					'placeholder' => '',
+				),
+				array(
+					'key' => 'field_640a21d0b2428',
+					'label' => 'Button sub-heading text (Italics)',
+					'name' => 'yesand_button_sub-heading_text',
+					'aria-label' => '',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'maxlength' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+				),
+				array(
+					'key' => 'field_640a2223b2429',
+					'label' => 'Link(text, url, target)',
+					'name' => 'yesand_link',
+					'aria-label' => '',
+					'type' => 'link',
+					'instructions' => '',
+					'required' => 1,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'return_format' => 'array',
+				),
+			),
+			'location' => array(
+				array(
+					array(
+						'param' => 'block',
+						'operator' => '==',
+						'value' => 'acf/yes-button',
+					),
+				),
+			),
+			'menu_order' => 0,
+			'position' => 'normal',
+			'style' => 'default',
+			'label_placement' => 'top',
+			'instruction_placement' => 'label',
+			'hide_on_screen' => '',
+			'active' => true,
+			'description' => '',
+			'show_in_rest' => 0,
+		));
+	endif;
+?>

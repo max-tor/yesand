@@ -1,0 +1,158 @@
+.btn-group-1
+	position: relative
+	text-align: center
+	width: max-content
+	max-width: fit-content
+
+	&--right
+		margin-left: auto
+
+	&--center
+		margin-left: auto
+		margin-right: auto
+
+	&__pre
+		font-family: var(--font-capitolium)
+		font-style: italic
+		font-weight: 400
+		display: block
+		line-height: 1.2
+		text-transform: lowercase
+		position: relative
+		font-size: 18px
+		z-index: 1
+		left: -30px
+
+		@media (min-width: 1024px)
+			font-size: 21px
+
+		.btn-group-1--big &
+			@media (min-width: 1024px)
+				font-size: 25px
+	
+	&__a
+		color: var(--color-red)
+		display: block
+		font-family: var(--font-gilroy)
+		font-size: 33px
+		font-weight: 900
+		line-height: 1
+		text-transform: uppercase
+		position: relative
+		z-index: 1
+
+		.btn-group-1--big &
+
+			@media (min-width: 1024px)
+				font-size: 45px
+
+		&:hover
+			color: var(--color-red) !important
+			text-decoration: none !important
+
+	&__arrow
+		border-radius: 50%
+		bottom: 0.1em
+		color: var(--color-red)
+		display: block
+		font-family: var(--font-gilroy)
+		font-size: 3rem
+		line-height: 1.5rem
+		padding: 0
+		position: absolute
+		right: -3.5rem
+		z-index: 1
+
+		.btn-group-1--big &
+			font-size: 3.5rem
+			right: -4.1rem
+			line-height: 0.55em
+
+	&__ball
+		$size: 3.4rem
+		background-color: var(--color-sky-1)
+		border-radius: 50%
+		bottom: -0.6rem
+		display: block
+		height: $size
+		position: absolute
+		right: -3.8rem
+		width: $size
+		z-index: 0
+
+		.btn-group-1--big &
+			$size: 4rem
+			height: $size
+			right: -4.5rem
+			width: $size
+
+	&__flex
+		display: flex
+		align-items: center
+		padding-right: 75px
+
+		&--big &
+			@media (min-width: 1024px)
+				padding-right: 80px
+
+		&:hover
+			text-decoration: none!important
+
+	&__circles
+		position: absolute
+		z-index: 0
+		right: 0
+		transition: 0.5s
+		transition-timing-function: ease-in-out
+		width: 150px
+
+		&-img
+			height: 58px
+			width: 100%
+
+			.btn-group-1--big &
+				@media (min-width: 1024px)
+					height: 70px
+
+	&__arrow-right
+		position: absolute
+		z-index: 1
+		width: 40px
+		margin-left: 14px
+		height: 4px
+		background: var(--color-red)
+		border-radius: 6px
+		transition: 0.5s
+		left: calc(100% - 74px)
+
+		.btn-group-1--big &
+			@media (min-width: 1024px)
+				margin-left: 18px
+				width: 44px
+
+		&:after
+			content: ''
+			background-image: url('../../../images/arrow-right-button.svg')
+			width: 16px
+			height: 24px
+			position: absolute
+			right: -3px
+			background-repeat: no-repeat
+			background-size: contain
+			top: -10px
+
+	// 	svg
+	// 		height: 22px
+
+	// 		.btn-group-1--big &
+	// 			height: 24px
+	
+	// path
+	// 	transition: 0.5s
+
+	&:hover &
+		&__arrow-right
+			width: 60px
+
+		&__circles
+			right: calc(100% - 52px)

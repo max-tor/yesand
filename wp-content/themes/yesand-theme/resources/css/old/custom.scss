@@ -1,0 +1,65 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--wp--preset--color--yellow);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Button arrow right */
+.bg-secondary button .arrow {
+    height: 2px;
+    width: 16px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 4px;
+    transition: all .4s ease;
+}
+
+.bg-secondary button:hover .arrow {
+    width: 24px;
+    margin-right: 5px;
+}
+  
+.bg-secondary button .arrow-yellow {
+    background: var(--wp--preset--color--yellow);
+}
+  
+.bg-secondary button .arrow:before,
+.bg-secondary button .arrow:after {
+    content: "";
+    background: var(--wp--preset--color--yellow);
+    position: absolute;
+    height: 3px;
+    width: 8px;
+    border-radius: 30%;
+}
+  
+.bg-secondary button .arrow:before {
+    right: -2px;
+    bottom: -3px;
+    transform: rotate(-45deg);
+}
+  
+.bg-secondary button .arrow:after {
+    right: -2px;
+    top: -3px;
+    transform: rotate(45deg);
+}

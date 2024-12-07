@@ -1,0 +1,14 @@
+{
+    "name": "Media Component",
+    "title": "Media Component",
+    "description": "Configurable Media Component",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "media-component.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

@@ -1,0 +1,79 @@
+// `../../images` points to images in `yesand-theme/resources/images`
+// (images from there are copied into `yesand-theme/images` by the build step)
+.site-footer
+	.footer-top
+		background-image: url('../../images/logo/logo-transparent-pictogram.svg')
+		background-position-x: 0
+		background-position-y: 0
+		background-repeat: no-repeat
+		background-size: auto 375px
+		background-size: contain
+		&__summary
+			max-width: 430px
+			h3
+				font-size: 21px
+				line-height: 28px
+		@media (min-width: 768px)
+			padding-top: 16px
+			min-height: 315px
+
+	.col-left
+		@apply pt-[52px] md:pt-0
+		form
+			@apply flex flex-wrap
+			label:not(.hs-error-msg)
+				@apply hidden
+			p
+				@apply prepend-3 block mb-1 uppercase mb-0
+			h2
+				@apply heading-4 text-dark-green leading-tight mt-0 mb-8
+			fieldset:last-of-type
+				@apply flex-grow
+			@media (max-width: 768px - 1)
+				@apply max-w-[100%]
+				fieldset
+					width: 100%
+
+		.hs_submit
+			@apply max-w-[30%] pl-4
+
+		.hs-error-msg
+			@apply text-red-500
+
+		.hs-error-msgs
+			@apply px-0
+
+		.hs-button
+			cursor: pointer
+			@apply para-6 text-yellow mt-4
+
+			&:after
+				content: ' →'
+
+		.hs-input
+			@apply input-1 my-2 w-full
+
+	.item-feature-insta
+		figure
+			height: 100%
+			// @apply max-w-[241px]
+			a
+				display: flex
+				height: 100%
+				img
+					object-fit: cover
+					
+	#controls-carousel
+		@apply max-w-[350px] mx-auto
+		
+.prefooter-title
+	margin-bottom: 25px
+
+	@media (min-width: 1024px)
+		letter-spacing: -1px
+		margin-bottom: 95px
+
+.footer-bottom
+	ul
+		padding: 0
+		margin: 0

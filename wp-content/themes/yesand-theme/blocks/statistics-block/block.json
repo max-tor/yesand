@@ -1,0 +1,14 @@
+{
+    "name": "Statistics block",
+    "title": "Statistics block",
+    "description": "Configurable Statistics block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "statistics-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

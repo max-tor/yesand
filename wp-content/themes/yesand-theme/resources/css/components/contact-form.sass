@@ -1,0 +1,98 @@
+.contact-form
+  background-color: rgba(118, 114, 111, 0.1)
+  padding-top: 80px
+  padding-bottom: 75px
+  @media (max-width: 768px - 1)
+    padding: 45px 0
+  .container
+    max-width: 830px
+  .gform_required_legend
+    display: none
+  .gform_fields
+    display: flex
+    flex-wrap: wrap
+    gap: 0 16%
+    @media (max-width: 768px - 1)
+      gap: 0
+    .gfield--width-half
+      width: 42%
+      @media (max-width: 768px - 1)
+        width: 100%
+    .gfield--width-full
+      width: 100%
+  .gfield
+    margin-bottom: 30px
+    @media (max-width: 768px - 1)
+      margin-bottom: 15px
+  .gfield_label
+    font-family: var(--font-gilroy)
+    font-size: 12px
+    line-height: 14px
+    font-weight: bold
+    letter-spacing: 0.24px
+    color: var(--color-dark-green)
+    text-transform: uppercase
+    padding-bottom: 6px
+  .gfield_select
+    min-width: 42%
+    appearance: none
+    background-image: url('../../../images/arrow-down.svg')
+    background-position-x: 94%
+    background-position-y: 50%
+    background-repeat: no-repeat
+    background-size: auto 12px
+    @media (max-width: 768px - 1)
+      min-width: 100%
+  .textarea
+    min-width: 100%
+    max-height: 200px
+  .hidden_label
+    margin-bottom: 0
+    .gfield_label
+      display: none
+  input, select, textarea
+    font-family: var(--font-capitolium)
+    background-color: var(--color-white)
+    border: 1px solid #CFCFCF
+    border-radius: 5px
+    padding: 15px
+    font-size: 16px
+    line-height: 24px
+  .btn-group-1
+    margin: auto
+  .gform_submission_error
+    text-align: center
+    font-size: 20px
+  .validation_message
+    color: var(--color-red)
+  .gform_confirmation_message
+    font-size: 20px
+    text-align: left
+    padding-bottom: 20px
+  .ginput_container_fileupload
+    input[type='file']
+      @media (max-width: 768px - 1)
+        border: 0
+        background: transparent
+        padding: 0
+      @media (min-width: 768px - 1)
+        background-color: var(--color-red)
+        color: var(--color-white)
+        width: 100%
+        &::file-selector-button
+          display: none
+.form-header
+  background-color: rgba(118, 114, 111, 0.1)
+  padding-top: 50px
+  margin-top: 30px
+  @media (max-width: 768px - 1)
+    padding-top: 0
+  .title-group-1--with-circles
+    margin-bottom: 0
+  .title-tag-1__title
+    margin-bottom: 0
+.gform_ajax_spinner
+  position: absolute
+  left: 42%
+
+

@@ -1,0 +1,32 @@
+.soc-links
+	margin: 0
+	padding: 0
+	position: fixed
+	right: 1rem
+	top: calc(50% - 100px)
+	z-index: 3
+
+	@media (max-width: 640px - 1)
+		display: none
+
+	&__a
+		align-items: center
+		border-radius: 50%
+		display: flex
+		height: 2rem
+		justify-content: center
+		margin-block-start: 0.3rem
+		opacity: 1
+		width: 2rem
+		font-size: 24px
+
+		&:hover
+			background-color: hsla(0, 0%, 70%, .1)
+			opacity: 1
+			text-decoration: none!important
+
+			.fa
+				color: var(--color-red)
+
+	.fa
+		color: var(--color-pink)

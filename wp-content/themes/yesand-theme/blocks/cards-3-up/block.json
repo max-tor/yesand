@@ -1,0 +1,14 @@
+{
+    "name": "cards 3 up",
+    "title": "Cards 3 up",
+    "description": "3-up block consists of a 3 column layout with no gap including square cropped images and formatted text.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "cards-3-up.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

@@ -1,0 +1,20 @@
+.fishbone
+	@media (min-width: 1024px)
+		display: flex
+
+	&__left	
+		@media (min-width: 1024px)
+			padding-right: 40px		
+			border-right: 3px solid var(--color-red)
+
+	&__right
+		@media (min-width: 1024px)
+			padding-left: 40px
+
+	&__left,
+	&__right
+		@media (min-width: 1024px)
+			flex: 1
+			
+		@media (min-width: 1280px)
+			padding: 0 100px

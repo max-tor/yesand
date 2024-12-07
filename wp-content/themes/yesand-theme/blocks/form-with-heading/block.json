@@ -1,0 +1,14 @@
+{
+    "name": "Yes& Form With Heading block",
+    "title": "Yes& Form With Heading block",
+    "description": "Configurable Yes& Form With Heading block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "form-with-heading.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

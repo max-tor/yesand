@@ -1,0 +1,14 @@
+{
+    "name": "client logos",
+    "title": "Client Logos",
+    "description": "The Client Logos component displays a wide range of client logos in greyscale.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["logo"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "client-logos.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

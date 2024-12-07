@@ -1,0 +1,196 @@
+$desktop-menu-min: 1024px
+.header
+	.wrap-header
+		@media (min-width: $desktop-menu-min)
+			padding-block: 1.5rem
+
+		@media (max-width: $desktop-menu-min - 1)
+			padding-block: 1.3rem
+
+	.navbar-logo
+		&__img
+			@media (min-width: $desktop-menu-min)
+				height: 41px
+
+			@media (max-width: $desktop-menu-min - 1)
+				height: 34px
+
+	.wrap-right-navigation
+		position: relative
+
+		@media (min-width: $desktop-menu-min)
+			align-items: center
+			display: flex
+			justify-content: space-between
+
+		@media (max-width: $desktop-menu-min - 1)
+			// box-shadow: 0 2px 17px 7px hsla(0, 0%, 0%, .5)
+			display: none
+			left: 0
+			margin-top: 20px
+			position: absolute
+			width: 100%
+
+		&.xs-open
+			display: block
+
+	[data-js="mobile-menu-toggle"]
+		@media (min-width: $desktop-menu-min)
+			display: none
+
+		@media (max-width: $desktop-menu-min - 1)
+			&[aria-expanded="true"]
+
+				.icon-hamburger
+					display: none
+
+				.icon-close
+					display: block
+
+	.bg-mobile
+		display: block
+		height: 100%
+		left: 0
+		position: fixed
+		top: 75px
+		width: 100%
+		z-index: 0
+		background-color: var(--color-red)
+
+		@media (min-width: $desktop-menu-min)
+			display: none
+
+	.main-menu-nav
+		@media (max-width: $desktop-menu-min - 1)
+			margin-top: 1.3rem
+			padding: 2.3rem 0 .5rem
+
+	#wrap-header
+		@media (min-width: 1280px) and (max-width: 1500px)
+			padding-inline: 20px
+
+
+	@media (max-width: $desktop-menu-min - 1)
+		.show-navigation
+			padding-bottom: 0
+
+			.icon-hamburger
+				display: none
+
+			.icon-close
+				display: block
+
+
+	.main-nav-ul
+		margin-bottom: 0
+		padding-left: 0
+		z-index: 1
+
+		@media (min-width: $desktop-menu-min)
+			display: flex
+			margin-inline: -1rem
+
+		@media (max-width: $desktop-menu-min - 1)
+			text-align: center
+
+	.menu-item
+		@media (min-width: $desktop-menu-min)
+			padding-inline: 1rem
+
+		a
+			display: inline-block
+			font-size: 0.75rem
+			line-height: 1rem
+			position: relative
+			text-transform: uppercase
+
+			&:hover
+				text-decoration: none !important
+
+			@media (max-width: $desktop-menu-min - 1)
+				display: block
+				font-size: 1.25rem
+				font-weight: 500
+				padding-block: 1.35rem
+
+				&:active
+					background-color: hsl(346, 97%, 35%)
+
+			@media (min-width: $desktop-menu-min)
+				border-bottom-width: 2px
+				border-color: transparent
+				font-weight: 600
+				padding-bottom: 0.25rem
+
+				&:hover
+					color: var(--color-yellow)
+
+				&::after
+					background-color: var(--color-yellow)
+					bottom: -2px
+					content: ''
+					height: 2px
+					left: 0
+					position: absolute
+					transform-origin: bottom right
+					transform: scaleX(0)
+					transition: transform 0.25s ease-out
+					width: 100%
+
+				&::before
+					transform: scaleX(0)
+					position: absolute
+					width: 30px
+					height: 12px
+					content: ""
+					right: 21px
+					bottom: -7px
+					background-repeat: no-repeat
+					background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzUgMzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgkJCQkJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzkuODkzNCAwLjg1Nzg3NEw1Mi4yNjc4IDEzLjIzMjJDNTMuMjQ0MSAxNC4yMDg1IDUzLjI0NDEgMTUuNzkxNCA1Mi4yNjc4IDE2Ljc2NzdMMzkuODkzNCAyOS4xNDIxQzM4LjkxNzEgMzAuMTE4NCAzNy4zMzQyIDMwLjExODQgMzYuMzU3OSAyOS4xNDIxQzM1LjM4MTYgMjguMTY1OCAzNS4zODE2IDI2LjU4MjkgMzYuMzU3OSAyNS42MDY2TDQ0LjQ2NDUgMTcuNUwyLjUgMTcuNUMxLjExOTI5IDE3LjUgMCAxNi4zODA3IDAgMTVDMCAxMy42MTkzIDEuMTE5MjkgMTIuNSAyLjUgMTIuNUw0NC40NjQ1IDEyLjVMMzYuMzU3OSA0LjM5MzQxQzM1LjM4MTYgMy40MTcxIDM1LjM4MTYgMS44MzQxOCAzNi4zNTc5IDAuODU3ODc0QzM3LjMzNDIgLTAuMTE4NDM3IDM4LjkxNzEgLTAuMTE4NDM3IDM5Ljg5MzQgMC44NTc4NzRaIiBmaWxsPSIjRkZCRjAwIj48L3BhdGg+CgkJCQkJPC9zdmc+")
+					transform-origin: bottom right
+					transform: scaleX(0)
+					transition: all 0.15s ease-out
+
+				&:hover::after
+					transform: scaleX(1)
+					transform-origin: bottom left
+				&:hover::before
+					right: -21px
+					transform: scaleX(1)
+					transform-origin: bottom left
+
+	.current-menu-item
+		a
+			@media (min-width: $desktop-menu-min)
+				color: var(--color-yellow)
+				border-color: var(--color-yellow)
+
+			@media (max-width: $desktop-menu-min - 1)
+				background-color: hsl(346, 97%, 35%)
+			&::after
+				transform: scaleX(1)
+
+	#search-heading
+		@media (max-width: $desktop-menu-min - 1)
+			display: none
+
+	.mobile-nav-social-media
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: 0
+		padding-left: 0
+		padding-block: 1rem 2rem
+
+		li
+			list-style-type: none
+
+		&__a
+			color: white
+			display: block
+			font-size: 1.5rem
+			padding-inline: 1.3rem
+			padding-block: .5rem
+
+.no-scroll
+	overflow-y: hidden

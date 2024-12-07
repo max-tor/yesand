@@ -1,0 +1,14 @@
+{
+    "name": "Heading block",
+    "title": "Yes& Heading block",
+    "description": "Configurable Yes& Heading block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "heading-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

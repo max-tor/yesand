@@ -1,0 +1,5 @@
+import './modules/header-tabs.js'
+import './modules/media-block-3-ui.js'
+import './modules/media-text.js'
+import './modules/team-members.js'
+import './modules/menu-mobile.js'

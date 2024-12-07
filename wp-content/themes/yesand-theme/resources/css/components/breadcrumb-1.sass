@@ -1,0 +1,37 @@
+.breadcrumb-1
+
+	&__ul
+		background-color: var(--color-yellow)
+		line-height: 1
+		margin-block: 0
+		padding-inline-start: 0
+		padding-inline: .5rem
+		width: max-content
+
+	&__li
+		display: inline-block
+		list-style-type: none
+
+	&__li:not(:first-child):before
+		color: black
+		content: "/"
+		display: inline-block
+		font-size: 0.8em
+		text-align: center
+		width: 1em
+
+	&__item
+		color: black
+		display: inline-block
+		font-family: var(--font-gilroy)
+		font-size: 12px
+		font-weight: 600
+		letter-spacing: .1em
+		padding: 0.3rem 0.1rem
+		text-decoration: none
+		text-transform: uppercase
+
+		&:hover
+			color: black
+			text-decoration: none
+

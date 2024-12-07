@@ -1,0 +1,78 @@
+// .team-members
+
+.team-member-1
+	border: solid 1px white
+	cursor: pointer
+
+	&__hoverable
+		position: relative
+		cursor: pointer
+
+	&__img-frame
+		aspect-ratio: 1/1
+		width: 100%
+
+	&__photo
+		min-height: 100%
+		min-width: 100%
+		object-fit: cover
+
+	&__overlay
+		height: 100%
+		left: 0
+		opacity: 0
+		position: absolute
+		transition-duration: 0.2s
+		transition-property: opacity
+		top: 0
+		width: 100%
+
+	&__content
+		background-color: rgb(242, 241, 240)
+		padding-block: 2rem 3rem
+		position: relative
+
+		@media (min-width: 1024px)
+			padding-inline: 6.2rem
+
+		@media (min-width: 640px) and (max-width: 1024px - 1)
+			padding-inline: 4rem
+
+		@media (max-width: 640px - 1)
+			padding-inline: 2rem
+
+	&__social-net-link
+		display: inline-block
+		margin-top: 2rem
+
+	&__close
+		position: absolute
+		right: 2rem
+		top: 2rem
+
+
+	&:hover,
+	&[aria-selected]
+		.team-member-1__overlay
+			opacity: .9
+
+// Trying to simulate jquery.slideDown()
+[data-js="team-member-content-clone"]
+	transform: scaleY(0)
+	transform-origin: top
+
+	&[aria-expanded]
+		animation-duration: .3s
+		animation-fill-mode: forwards
+		animation-iteration-count: 1
+		animation-name: grow_down
+		animation-timing-function: ease-out
+
+@keyframes grow_down
+	0%
+		opacity: 0
+		transform: scaleY(0)
+
+	100%
+		opacity: 1
+		transform: scaleY(1)

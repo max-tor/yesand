@@ -1,0 +1,14 @@
+{
+    "name": "Yes& Metaverse block",
+    "title": "Yes& Metaverse block",
+    "description": "Configurable Yes& Metaverse block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "metaverse-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

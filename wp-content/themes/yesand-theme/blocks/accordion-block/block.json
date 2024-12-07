@@ -1,0 +1,14 @@
+{
+    "name": "Yes& Accordion block",
+    "title": "Yes& Accordion block",
+    "description": "Configurable Yes& Accordionblock",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "accordion-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

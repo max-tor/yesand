@@ -1,0 +1,31 @@
+label
+  display: inline-block
+
+select
+  word-wrap: normal
+
+  &:disabled
+    opacity: 1
+
+
+[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="week"]):not([type="time"])::-webkit-calendar-picker-indicator
+  display: none !important
+
+::-moz-focus-inner
+  padding: 0
+  border-style: none
+
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field
+  padding: 0
+
+::-webkit-color-swatch-wrapper
+  padding: 0
+
+output
+  display: inline-block

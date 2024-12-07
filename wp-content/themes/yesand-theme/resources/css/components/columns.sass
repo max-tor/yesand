@@ -1,0 +1,23 @@
+.wp-block-columns
+  &.form
+    @apply bg-mint flex justify-center gap-x-28 px-8 pt-4 pb-8
+    .wp-block-column:first-child
+      @apply max-w-md
+      label:not(.hs-error-msg)
+        @apply hidden
+      p
+        @apply prepend-3 block mb-1 uppercase mb-0
+      h2
+        @apply heading-4 text-dark-green leading-tight mt-0 mb-8
+      input:not([type=submit])
+        @apply input-1 my-2 w-full
+      input[type=submit]
+        @apply para-6 text-red mt-4
+        &:after
+          content: ' →'
+      .hs-error-msg
+        @apply text-red-500
+      .hs-error-msgs
+        @apply px-0
+    .wp-block-column:last-child
+      @apply flex-shrink max-w-2xl prepend-5 flex items-center

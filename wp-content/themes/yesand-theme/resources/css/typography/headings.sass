@@ -1,0 +1,152 @@
+h1, h2, h3, h4, h5
+	line-height: 1
+	margin-bottom: 1rem
+
+.hero-1
+	font-family: var(--font-gilroy)
+	font-weight: 900
+	line-height: 0.9
+	text-transform: uppercase
+	@include fluid-value(font-size, 575px, 1280px, 48px, 125px)
+
+.hero-2
+	font-family: var(--font-gilroy)
+	font-weight: 900
+	line-height: 0.9
+	max-width: 900px
+	text-transform: uppercase
+	@include fluid-value(font-size, 575px, 1280px, 23px, 128px)
+
+.heading-1
+	font-family: var(--font-gilroy)
+	font-size: 85px
+	font-weight: 900
+	line-height: .9
+	text-transform: uppercase
+
+.heading-2
+	font-family: var(--font-gilroy)
+	font-weight: 900
+	line-height: 1
+	text-transform: uppercase
+	font-style: normal
+	@include fluid-value(font-size, 499px, 1024px, 24px, 67px)
+
+.heading-3
+	font-family: var(--font-gilroy)
+	font-size: 31px
+	font-weight: 900
+	line-height: 1
+	text-transform: uppercase
+
+.heading-4
+	font-family: var(--font-gilroy)
+	font-size: 38px
+	font-weight: 900
+	line-height: 1
+	text-transform: uppercase
+
+.heading-5
+	font-family: var(--font-gilroy)
+	font-size: 25px
+	font-weight: 900
+	line-height: 1
+	text-transform: uppercase
+
+.heading-6
+	font-family: var(--font-gilroy)
+	font-size: 14px
+	font-weight: 600
+	line-height: 1
+
+.heading-7
+	color: #02272B
+	font-family: var(--font-gilroy)
+	font-size: 20px
+	font-weight: 900
+	line-height: 1
+	text-transform: uppercase
+
+.prepend-1
+	font-family: var(--font-capitolium)
+	font-weight: 400
+	font-style: italic
+	line-height: 1.1
+	@include fluid-value(font-size, 575px, 1280px, 22px, 45px)
+
+.prepend-2
+	font-family: var(--font-capitolium)
+	font-weight: 400
+	font-style: italic
+	line-height: 1.1
+	@include fluid-value(font-size, 575px, 1280px, 21px, 35px)
+
+.prepend-3
+	font-family: var(--font-capitolium)
+	font-size: 25px
+	font-weight: 400
+	font-style: italic
+	line-height: 1.1
+
+.prepend-4
+	font-family: var(--font-capitolium)
+	font-weight: 400
+	font-style: italic
+	line-height: 1.1
+
+	@media (min-width: 576px)
+		font-size: 21px
+
+	@media (max-width: 576px - 1)
+		font-size: 18px
+
+.prepend-5
+	font-family: var(--font-capitolium)
+	font-size: 18px
+	font-weight: 400
+	font-style: normal
+	line-height: 1.1
+
+.arrow-after-heading-1
+	&::after
+		background-image: url('../../images/arrow-2.svg')
+		background-position-x: right
+		background-position-y: center
+		background-repeat: no-repeat
+		content: ""
+		display: inline-block
+		height: .9em
+		margin-left: .5rem
+		vertical-align: top
+		width: 45px
+		transition-property: width
+		transition-duration: 0.3s
+
+	&:hover::after
+		width: 80px
+
+.font-normal
+	font-weight: 300
+
+
+.text-block,
+.fishbone,
+.img-text
+
+	h1
+		@extend .heading-1
+
+	h2
+		@extend .heading-2
+
+	h3
+		@extend .heading-3
+
+	h4
+		@extend .heading-4
+
+	h5
+		@extend .heading-5
+
+	h6
+		@extend .heading-6

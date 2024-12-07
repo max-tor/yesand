@@ -1,0 +1,14 @@
+{
+    "name": "header with background",
+    "title": "Header with Background",
+    "description": "Yes& Header with Background Image and CTA",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "header-with-background.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

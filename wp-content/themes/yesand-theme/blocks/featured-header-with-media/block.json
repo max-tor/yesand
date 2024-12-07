@@ -1,0 +1,14 @@
+{
+    "name": "Featured Header with media",
+    "title": "Featured Header with media",
+    "description": "Yes& Header with media for Work page",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "featured-header-with-media.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

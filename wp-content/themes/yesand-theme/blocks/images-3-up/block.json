@@ -1,0 +1,14 @@
+{
+    "name": "images 3 up",
+    "title": "Images 3 up",
+    "description": "3-up block consists of images, text, and links displayed in a grid layout",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "images-3-up.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

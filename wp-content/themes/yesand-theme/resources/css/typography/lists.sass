@@ -1,0 +1,44 @@
+ol,
+ul
+	padding-left: 2rem
+
+ol,
+ul,
+dl
+	margin-top: 0
+	margin-bottom: 1rem
+
+ol ol,
+ul ul,
+ol ul,
+ul ol
+	margin-bottom: 0
+
+dd
+	margin-bottom: .5rem
+	margin-left: 0
+
+summary
+	cursor: pointer
+
+.text-block,
+.fishbone,
+.img-text
+	ul
+		li
+			position: relative
+			margin-bottom: 10px
+
+			&:before
+				content: ''
+				width: 15px
+				height: 15px
+				position: absolute
+				left: -30px
+				display: block
+				background: var(--color-mint)
+				top: 6px
+				border-radius: 50%
+	
+	ol
+		list-style: auto

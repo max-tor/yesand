@@ -1,0 +1,58 @@
+.box-1
+	align-items: center
+	background-color: white
+	padding-block: 1.5rem
+
+	&:first-of-type
+		padding-block-start: 6rem
+
+	&:last-of-type
+		@media (min-width: 768px)
+			padding-block-end: 6rem
+
+		@media (max-width: 768px - 1)
+			padding-block-end: 3rem
+
+	@media (min-width: 768px) and (max-width: 1023px)
+		align-items: flex-start
+
+	@media (min-width: 768px)
+		display: flex
+
+	&__content
+		@media (min-width: 768px)
+			flex-basis: 50%
+			min-width: 50%
+
+		@media (max-width: 768px - 1)
+			margin-block-start: 2rem
+
+		.box-1--right &
+			@media (min-width: 768px)
+				padding-left: 5vw
+
+		.box-1--left &
+			order: 1
+
+			@media (min-width: 768px)
+				padding-right: 5vw
+
+	&__img-frame
+		align-items: center
+		aspect-ratio: 16 / 10
+		background-color: var(--color-dark-green)
+		display: flex
+		overflow: hidden
+
+		@media (min-width: 768px) and (max-width: 1023px)
+			aspect-ratio: 1
+
+		@media (min-width: 768px)
+			flex-basis: 50%
+			min-width: 50%
+
+		.box-1--left &
+			order: 2
+
+	&__img
+		object-fit: cover

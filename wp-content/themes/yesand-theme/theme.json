@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#C10230"
+        },
+        {
+          "name": "Yes& Black",
+          "slug": "secondary",
+          "color": "#02272B"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#FFFFFF"
+        },
+        {
+          "name": "Mint",
+          "slug": "mint",
+          "color": "#4CECC9"
+        },
+        {
+          "name": "Yellow",
+          "slug": "yellow",
+          "color": "#FFBF00"
+        },
+        {
+          "name": "Gray",
+          "slug": "gray",
+          "color": "#76726F"
+        },
+        {
+          "name": "Pink",
+          "slug": "pink",
+          "color": "#E08198"
+        },
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#000000"
+        },
+        {
+          "name": "Utility Active",
+          "slug": "u_active",
+          "color": "#0C24A4"
+        }
+
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "ExtraSmall",
+          "slug": "extrasmall",
+          "size": "0.625rem"
+        },
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "regular",
+          "name": "Regular",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "xxl",
+          "name": "2XL",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "xxxl",
+          "name": "3XL",
+          "size": "1.875rem"
+        }
+      ]
+    }
+  }
+}

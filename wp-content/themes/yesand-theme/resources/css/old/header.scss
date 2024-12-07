@@ -1,0 +1,19 @@
+@keyframes a1 {
+	90%, 100% {
+		flex-grow: 1
+	}
+}
+
+header.header {
+	.wrap-container {
+		@apply w-full lg:mx-auto lg:container md:max-w-[1280px] xl:max-w-[1536px];
+	}
+
+	.wrap-social-media a {
+		@apply mx-4 sm:mx-6;
+
+		&:hover {
+			@apply max-[959px]:text-yellow;
+		}
+	}
+}

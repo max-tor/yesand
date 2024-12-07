@@ -1,0 +1,184 @@
+.top-v3
+	$mascot-width: 437px
+	$mascot-offset-r: -140px
+	$block-offset-l: -55px
+
+	position: relative
+
+	@media (min-width: 768px)
+		background-color: #a3a8a0
+
+	@media (max-width: 768px - 1px)
+		background-color: white
+		&:before
+			content: ''
+			position: absolute
+			background-image: url('/wp-content/themes/yesand-theme/images/logo/logo-gray-pictogram.svg')
+			background-position: 0 0
+			background-repeat: no-repeat
+			background-size: contain
+			width: 100%
+			height: 100%
+			z-index: 0
+
+	p:last-child
+		margin-bottom: 0
+
+	&__content
+		position: relative
+		z-index: 3
+
+		@media (min-width: 768px)
+			align-items: flex-end
+			display: flex
+			padding-top: 400px
+
+		@media (max-width: 768px - 1px)
+			padding-top: 13rem
+
+	&__text-col
+		flex-grow: 1
+
+	&__btn-col
+		min-width: 320px
+
+	&__txt-frame
+		max-width: 55ch !important
+
+	.heading-2
+		// @media (min-width: 1024px)
+		// 	font-size: 4.2rem
+		//
+		// @media (min-width: 768px) and (max-width: 1024px - 1)
+		// 	font-size: 3.5rem
+		//
+		// Unfortunately, we have to override here
+		@media (max-width: 768px - 1)
+			font-size: 2.5rem
+
+	&__plate
+		background-color: var(--color-dark-green)
+		padding-bottom: 40px
+		position: relative
+
+		@media (min-width: 1280px)
+			margin-left: $block-offset-l
+			padding-left: 85px
+			padding-right: $mascot-width + $mascot-offset-r + 10px
+
+		@media (min-width: 768px) and (max-width: 1280px - 1)
+			padding-left: 2.5rem
+			padding-right: 1.5rem
+
+		@media (max-width: 768px - 1px)
+			padding-left: 1.5rem
+			padding-right: 1rem
+
+	&__mascot
+		position: absolute
+
+		@media (min-width: 1280px)
+			right: $mascot-offset-r
+			top: 2.2rem
+			width: $mascot-width
+
+		@media (min-width: 1024px) and (max-width: 1280px - 1)
+			right: -10px
+			top: -2rem
+			width: 200px
+
+		@media (max-width: 1024px - 1px)
+			right: -10px
+			top: -2rem
+			width: 140px
+
+	.breadcrumb-1
+		position: relative
+		top: -.5rem
+
+		@media (min-width: 768px)
+			margin-bottom: 1.3rem
+
+		@media (max-width: 768px - 1px)
+			margin-bottom: 0.5rem
+
+	&__ghost
+		position: absolute
+		left: 0
+		top: 0
+		opacity: .3 !important
+		z-index: 1
+
+		@media (min-width: 1280px)
+			height: 37rem
+
+		@media (min-width: 768px) and (max-width: 1280px - 1)
+			height: 40%
+
+		@media (max-width: 768px - 1px)
+			height: 30%
+			z-index: 2
+
+	&__bg-img
+		object-fit: cover
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 0
+
+		@media (min-width: 768px)
+			height: 100%
+
+		@media (max-width: 768px - 1px)
+			height: 50%
+			z-index: 1
+
+		// https://developer.mozilla.org/en-US/docs/Web/CSS/object-position#formal_syntax
+		&--left-top
+			object-position: left top
+
+		&--left-center
+			object-position: left center
+
+		&--left-bottom
+			object-position: left bottom
+
+		&--center-top
+			object-position: center top
+
+		&--center
+			object-position: center center
+
+		&--center-bottom
+			object-position: center bottom
+
+		&--right-top
+			object-position: right top
+
+		&--right-center
+			object-position: right center
+
+		&--right-bottom
+			object-position: right bottom
+
+	&__wave
+		position: absolute
+		bottom: 0
+
+		height: 100%
+		width: 100%
+		max-width: unset
+
+		object-fit: none
+		// object-position: 50% 100%
+		object-position: bottom -142px right -600px
+		// Magic numbers, IDK why it works
+
+	.btn-group-1
+		border-bottom: solid 3px var(--color-red)
+		margin-left: auto
+		padding-bottom: 2rem
+
+		@media (max-width: 768px - 1px)
+			padding-top: 1.5rem
+			margin: auto

@@ -1,0 +1,14 @@
+{
+    "name": "Yes& Form block",
+    "title": "Yes& Form block",
+    "description": "Configurable Yes& Form block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "form-block.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

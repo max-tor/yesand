@@ -1,0 +1,14 @@
+{
+    "name": "media feed",
+    "title": "Media Feed",
+    "description": "Media&Text items Feed with Load More button",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "media-feed.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}

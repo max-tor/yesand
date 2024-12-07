@@ -1,0 +1,47 @@
+.header-with-media
+	&__text
+		h3
+			@extend .heading-5
+		
+		p
+			@extend .para-1
+	
+	&__text,
+	&__tags
+		margin-bottom: 20px
+
+	&__content
+		margin-top: 50px
+		@media (max-width: 768px - 1)
+			box-shadow: 0 2px 3px 0 rgba(51,51,51,.2)
+
+	&__tags
+		@media (min-width: 1024px)
+			margin-top: 30px
+
+	&-section
+		@extend .bg-wave-3
+		background-position-y: calc(100% + 230px)
+
+	&__card
+		padding-top: 1.5rem
+
+	&__frame
+		@media (max-width: 768px - 1)
+			border: none
+
+	&__prepend-img
+		position: absolute
+		top: -90px
+		z-index: 1
+		width: 290px
+		right: 115px
+
+		@media (max-width: 1280px - 1)
+			width: 100px
+			top: -50px
+			left: inherit
+			right: 0
+
+	&__title-span
+		font-style: normal

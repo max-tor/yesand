@@ -1,0 +1,14 @@
+{
+    "name": "fishbone",
+    "title": "Fishbone (2 Columns with Divider)",
+    "description": "2 Columns with Divider",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["logo"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "fishbone.php"
+    },
+    "align": "full",
+    "blockVersion": 1
+}
